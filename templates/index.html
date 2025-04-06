@@ -4,238 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SK Infra Works Construction</title>
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="static/css/index.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/index.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
-            <ul class="left-nav">
-                <li><a href="#"><img src="" alt="Logo" style="max-height: 40px;"></a></li>
-            </ul>
-            <ul class="center-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-section">About</a></li>
+            <div class="logo"><img src="../static/images/logo.png" alt="SK Infra Works Logo"></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li class="contact_us"><a href="#">Contact Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="contact-btn">Contact Us</a></li>
             </ul>
             <button class="hamburger"><i class="fas fa-bars"></i></button>
         </nav>
     </header>
 
-    <div class="title-container">
-        <h1>Building Excellence, Construction Trust</h1>
-        <p>We're a premier construction company with over 10 years of experience delivering exceptional quality commercial and residential projects</p>
-        <a href="#" class="view_our_projects">View our Projects</a>
-        <a href="#" class="get_quote">Get a Quote</a>
-    </div>
-
-    <div class="about-section" id="about-section">
-        <h1>About Us</h1>
-        <p id="p1">Excellence in construction is our standard, not just a goal</p>
-        <h2>SK Infra Works</h2>
-        <p>Founded in 2021, SK Infra Works has grown to become one of the most trusted names in the construction industry. Our expertise spans commercial, residential, and industrial projects with a focus on quality, innovation, and client satisfaction.</p>
-        <p>We combine decades of experience with cutting-edge technology and sustainable practices to deliver results that exceed expectations. Our team of certified professionals ensures that every project is completed on time, within budget, and to the highest standards.</p>
-    </div>
-
-    <div class="project-container">
-        <div class="project-container-title" id="projects">
-            <h2>Our Featured Projects</h2>
-            <p>Take a look at some of our recent construction projects that showcase our expertise and attention to detail</p>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <h1>Constructing Excellence</h1>
+        <p>Building your vision with precision, passion, and over a decade of expertise</p>
+        <div class="hero-buttons">
+            <a href="#projects">View Projects</a>
+            <a href="#contact">Get a Quote</a>
         </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1>About Us</h1>
+        <p class="quote">"Foundation of Trust, Pillars of Quality"</p>
+        <h2>SK Infra Works</h2>
+        <p>Since 2021, SK Infra Works has been a leader in construction, delivering innovative commercial, residential, and industrial projects with unmatched quality and sustainability.</p>
+        <p>Our team of skilled engineers and craftsmen use cutting-edge technology to ensure every structure stands the test of time.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Our Projects</h2>
         <div class="project-filters">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="commercial">Commercial</button>
             <button class="filter-btn" data-filter="industrial">Industrial</button>
             <button class="filter-btn" data-filter="residential">Residential</button>
-            <button class="filter-btn" data-filter="education">Fabrication</button>
         </div>
         <div class="projects-grid">
             <div class="project-card" data-category="commercial">
-                <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Modern Office Building">
-                </div>
+                <img src="../static/images/project1.jpg" alt="Commercial">
                 <div class="project-content">
                     <h3>Skyline Commercial Center</h3>
-                    <p>A state-of-the-art commercial complex with sustainable features and modern design elements.</p>
+                    <p>A modern business hub with eco-friendly design.</p>
                     <div class="project-info">
                         <span>Commercial</span>
-                        <span>Completed: 2024</span>
+                        <span>2024</span>
                     </div>
                 </div>
             </div>
             <div class="project-card" data-category="residential">
-                <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Luxury Apartment Complex">
-                </div>
+                <img src="../static/images/project2.jpg" alt="Residential">
                 <div class="project-content">
                     <h3>Riverside Residences</h3>
-                    <p>A luxury apartment complex with premium amenities and stunning waterfront views.</p>
+                    <p>Luxury living with stunning views.</p>
                     <div class="project-info">
                         <span>Residential</span>
-                        <span>Completed: 2023</span>
+                        <span>2023</span>
                     </div>
                 </div>
             </div>
             <div class="project-card" data-category="industrial">
-                <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Industrial Facility">
-                </div>
+                <img src="../static/images/project3.jpg" alt="Industrial">
                 <div class="project-content">
-                    <h3>TechPark Manufacturing Facility</h3>
-                    <p>A modern industrial facility designed for efficiency and productivity in manufacturing.</p>
+                    <h3>TechPark Facility</h3>
+                    <p>Efficient industrial design for productivity.</p>
                     <div class="project-info">
                         <span>Industrial</span>
-                        <span>Completed: 2024</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" data-category="commercial">
-                <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Healthcare Facility">
-                </div>
-                <div class="project-content">
-                    <h3>Westside Medical Center</h3>
-                    <p>A cutting-edge healthcare facility designed with patient comfort and staff efficiency in mind.</p>
-                    <div class="project-info">
-                        <span>Healthcare</span>
-                        <span>Completed: 2022</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" data-category="commercial">
-                <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Retail Complex">
-                </div>
-                <div class="project-content">
-                    <h3>Eastgate Shopping Plaza</h3>
-                    <p>A vibrant retail complex featuring modern architecture and eco-friendly design elements.</p>
-                    <div class="project-info">
-                        <span>Commercial/Retail</span>
-                        <span>Completed: 2023</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card" data-category="education">
-                <div class="project-image">
-                    <img src="/api/placeholder/600/400" alt="Education Building">
-                </div>
-                <div class="project-content">
-                    <h3>Innovation Learning Center</h3>
-                    <p>A forward-thinking educational facility designed to inspire creativity and collaboration.</p>
-                    <div class="project-info">
-                        <span>Education</span>
-                        <span>Completed: 2024</span>
+                        <span>2024</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="services" id="services">
-        <div class="section-title">
-            <h2>Our Services</h2>
-            <p>We offer a comprehensive range of construction services tailored to meet your specific needs</p>
-        </div>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon"><i class="fas fa-building"></i></div>
                 <h3>Commercial Construction</h3>
-                <p>From office buildings to retail spaces, we deliver commercial projects that meet your business objectives and timeline.</p>
+                <p>Building business success with precision.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon"><i class="fas fa-home"></i></div>
                 <h3>Residential Construction</h3>
-                <p>We build dream homes with attention to detail, quality craftsmanship, and personalized design solutions.</p>
+                <p>Crafting your dream home.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon"><i class="fas fa-industry"></i></div>
                 <h3>Industrial Construction</h3>
-                <p>Our industrial construction expertise ensures efficient, functional, and safe facilities for manufacturing and production.</p>
+                <p>Robust facilities for production.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon"><i class="fas fa-hammer"></i></div>
-                <h3>Renovation & Remodeling</h3>
-                <p>Transform your existing space with our expert renovation services that enhance functionality and aesthetic appeal.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
-                <h3>Design-Build Services</h3>
-                <p>Our integrated design-build approach streamlines the process and ensures cohesive execution from concept to completion.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon"><i class="fas fa-leaf"></i></div>
-                <h3>Sustainable Construction</h3>
-                <p>We specialize in green building practices that promote energy efficiency and environmental responsibility.</p>
+                <h3>Renovation</h3>
+                <p>Transforming spaces with expertise.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="testimonials">
-        <div class="section-title">
-            <h2>What Our Clients Say</h2>
-            <p>Hear from businesses and individuals who have experienced the BuildRight difference</p>
-        </div>
-        <div class="testimonial-item">
-            <p class="testimonial-quote">"SK Infra Works exceeded all our expectations. Their attention to detail, commitment to quality, and professional approach made our commercial project a success. They delivered on time and within budget."</p>
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial-card">
+            <p class="testimonial-quote">"SK Infra Works turned our vision into reality with exceptional quality and professionalism."</p>
             <div class="client-info">
                 <div class="client-image">
-                    <img src="/api/placeholder/60/60" alt="Client">
+                    <img src="https://www.cmed.co.zw/img/mrGray.jpg" alt="Client">
                 </div>
                 <div class="client-details">
                     <h4>Michael Johnson</h4>
-                    <p>CEO, Tech Innovations Inc.</p>
+                    <p>CEO, Tech Innovations</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="contact" id="contact">
-        <div class="section-title">
-            <h2>Contact Us</h2>
-            <p>Ready to start your project? Get in touch with our team for a consultation</p>
-        </div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
         <div class="contact-container">
             <div class="contact-info">
-                <!-- Contact info remains unchanged -->
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="info-text">
-                        <h4>Our Location</h4>
-                        <p>123 Construction Way, Building City, ST 12345</p>
+                        <h4>Location</h4>
+                        <p>123 Construction Way, Build City, ST 12345</p>
                     </div>
                 </div>
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-phone"></i></div>
                     <div class="info-text">
-                        <h4>Phone Number</h4>
+                        <h4>Phone</h4>
                         <p>(555) 123-4567</p>
                     </div>
                 </div>
                 <div class="info-item">
                     <div class="info-icon"><i class="fas fa-envelope"></i></div>
                     <div class="info-text">
-                        <h4>Email Address</h4>
+                        <h4>Email</h4>
                         <p>skinfraworks@gmail.com</p>
                     </div>
                 </div>
-                
             </div>
             <div class="contact-form">
-                
                 <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
                     <input type="hidden" name="access_key" value="acbc03f4-f1a9-46f1-b74d-8da35dd9d7bb">
                     <input type="hidden" name="subject" value="New Contact Form Submission from SK Infra Works">
                     <input type="hidden" name="from_name" value="SK Infra Works Website">
-                    
                     <div class="form-group">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                     </div>
@@ -252,138 +181,137 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-about">
                 <div class="footer-logo">SK <span>Infra Works</span></div>
-                <p class="footer-text">BuildRight Construction is committed to excellence in construction, delivering projects that exceed expectations through quality craftsmanship and innovative solutions.</p>
+                <p>Building excellence with innovation and integrity since 2021.</p>
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
             <div class="footer-links">
                 <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="footer-links">
                 <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Commercial Construction</a></li>
-                    <li><a href="#">Residential Construction</a></li>
-                    <li><a href="#">Industrial Construction</a></li>
-                    <li><a href="#">Renovation & Remodeling</a></li>
-                    <li><a href="#">Design-Build Services</a></li>
-                </ul>
+                <a href="#">Commercial</a>
+                <a href="#">Residential</a>
+                <a href="#">Industrial</a>
+                <a href="#">Renovation</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2025 BuildRight Construction. All rights reserved.</p>
+            <p>© 2025 SK Infra Works. All Rights Reserved.</p>
         </div>
     </footer>
-</body>
-<script>
 
-    // Form Submission with Web3Forms
-const form = document.getElementById('contactForm');
-
-form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const formData = new FormData(form);
-    
-    try {
-        const response = await fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            body: formData
+    <script>
+        // Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            alert('Message sent successfully! We will get back to you soon.');
-            form.reset();
-        } else {
-            alert('There was an error sending your message. Please try again.');
-        }
-    } catch (error) {
-        console.error('Error:', error);
-        alert('There was an error sending your message. Please try again later.');
-    }
-});
 
-
-    // Hamburger Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const centerNav = document.querySelector('.center-nav');
-    
-    hamburger.addEventListener('click', () => {
-        centerNav.classList.toggle('active');
-    });
-
-    // Project Filter Functionality
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            const filter = button.getAttribute('data-filter');
-            
-            projectCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
+        // Project Filters with Animation
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.classList.add('visible');
+                        }, 10);
+                    } else {
+                        card.classList.remove('visible');
+                        setTimeout(() => card.style.display = 'none', 400);
+                    }
+                });
             });
         });
-    });
 
-    
+        // Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
 
-    // Scroll to Top Button
-    const scrollBtn = document.createElement('button');
-    scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
-    scrollBtn.style.cssText = `
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        padding: 12px;
-        background: #ff8c00;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        display: none;
-        z-index: 1000;
-        font-size: 18px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    `;
-    document.body.appendChild(scrollBtn);
+        document.querySelectorAll('.project-card, .service-card, .testimonial-card, .contact-container').forEach(el => {
+            observer.observe(el);
+        });
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            scrollBtn.style.display = 'block';
-        } else {
-            scrollBtn.style.display = 'none';
-        }
-    });
+        // Form Submission with Web3Forms
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                if (result.success) {
+                    alert('Message sent successfully! We will get back to you soon.');
+                    form.reset();
+                } else {
+                    alert('There was an error sending your message. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('There was an error sending your message. Please try again later.');
+            }
+        });
 
-    scrollBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-</script>
+        // Scroll to Top Button
+        const scrollBtn = document.createElement('button');
+        scrollBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+        scrollBtn.style.cssText = `
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 15px;
+            background: #c9a10f;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            z-index: 1000;
+            font-size: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        `;
+        document.body.appendChild(scrollBtn);
+
+        window.addEventListener('scroll', () => {
+            scrollBtn.style.display = window.scrollY > 400 ? 'block' : 'none';
+        });
+
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
 </html>
